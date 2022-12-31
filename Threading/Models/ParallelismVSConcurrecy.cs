@@ -21,9 +21,9 @@ namespace Threading.Models
 
             Task.Factory.StartNew(parallelism1.SetTimer); //Parallelism
 
-            parallelism1.Exec1(); //Concurrecy
+            parallelism1.Exec1(); //Concurrency
 
-            parallelism1.Exec2(); //Concurrecy
+            parallelism1.Exec2(); //Concurrency
         }
 
 		public async void Exec1()
