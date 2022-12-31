@@ -16,7 +16,7 @@ using Threading.Models;
 #endregion
 
 #region Parallelism VS Concorrency sample
-ParallelismVSConcurrecy.Run();
+ParallelismVSConcurrency.Run();
 #endregion
 
 Console.WriteLine("Application started!");

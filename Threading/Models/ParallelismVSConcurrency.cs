@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Threading.Models
 {
-	public class ParallelismVSConcurrecy
+	public class ParallelismVSConcurrency
 	{
         int delayTime = 20000;
 
@@ -9,7 +9,7 @@ namespace Threading.Models
         {
             for (int i = delayTime / 1000; i > 0 ; i--)
             {
-                Console.WriteLine($"Remain second to complete task : {i}, Thread id {Thread.CurrentThread.ManagedThreadId}" );
+                Console.WriteLine($"Seconds remaining to complete the task : {i}, Thread id {Thread.CurrentThread.ManagedThreadId}" );
 
                 Thread.Sleep(1000);
             }
@@ -17,7 +17,7 @@ namespace Threading.Models
 
         public static void Run()
         {
-            ParallelismVSConcurrecy parallelism1 = new ParallelismVSConcurrecy();
+            ParallelismVSConcurrency parallelism1 = new ParallelismVSConcurrency();
 
             Task.Factory.StartNew(parallelism1.SetTimer); //Parallelism
 
