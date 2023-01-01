@@ -12,15 +12,17 @@ namespace Collections
 		public string Job { get; set; }
 		public double Salary { get; set; }
 
-        public int CompareTo(Employee obj)
+        public int CompareTo(Employee? other)
         {
-			if (this.Id > obj.Id)
-				return 1;
-			else if (this.Id < obj.Id)
-				return -1;
+            if (this.Id > other.Id)
+                return 1;
+            else if (this.Id < other.Id)
+                return -1;
 
-			return 0;
+            return 0;
         }
+
+         
     }
 }
 

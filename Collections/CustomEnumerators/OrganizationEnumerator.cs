@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Collections.CustomEnumerators
 {
-	public class OrganizationEnumarator : IEnumerator
+	public class OrganizationEnumarator : IEnumerator<Employee>
 	{
         private readonly Organization organization;
 
@@ -19,6 +19,13 @@ namespace Collections.CustomEnumerators
         }
 
         public object Current => this.currentEmployee;
+
+        Employee IEnumerator<Employee>.Current => this.currentEmployee;
+
+        public void Dispose()
+        {
+            
+        }
 
         public bool MoveNext()
         {

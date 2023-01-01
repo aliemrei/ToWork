@@ -7,9 +7,9 @@ namespace Collections.CustomComparers
 		{
 		}
 
-        public int Compare(Employee a, Employee b)
+        public int Compare(Employee? x, Employee? y)
         {
-            return a.Job.CompareTo(b.Job);
+            return x.Job.CompareTo(y.Job);
         }
     }
 }

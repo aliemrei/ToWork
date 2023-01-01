@@ -9,7 +9,7 @@ var emp1 = new Employee { Id = 5, Name = "John", Job = "Manager", Salary = 9000 
 var emp2 = new Employee { Id = 2, Name = "Mary", Job = "Accountant", Salary = 5500 };
 var emp3 = new Employee { Id = 6, Name = "Joe", Job = "Team Leader", Salary = 6000 };
 var emp4 = new Employee { Id = 3, Name = "Frank", Job = "Programmer", Salary = 5000 };
-var emp5 = new Employee { Id = 9, Name = "Andre", Job = "CEO", Salary = 12000 };
+var emp5 = new Employee { Id = 9, Name = "Andrei", Job = "CEO", Salary = 12000 };
 
 #endregion
 
@@ -34,11 +34,7 @@ Console.WriteLine();
 
 #region List sorting routines samples
 List<Employee> employees = new List<Employee>();
-employees.Add(emp1);
-employees.Add(emp2);
-employees.Add(emp3);
-employees.Add(emp4);
-employees.Add(emp5);
+employees.AddRange(organization);
 
 
 Console.WriteLine("--- Sorted by default comparer of Employee class ---");

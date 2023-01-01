@@ -4,7 +4,7 @@ using Collections.CustomEnumerators;
 
 namespace Collections
 {
-	public class Organization : IEnumerable
+	public class Organization : IEnumerable<Employee>
 	{
         private List<Employee> employees = new List<Employee>();
 
@@ -30,6 +30,13 @@ namespace Collections
         public void Add(Employee employee)
         {
             employees.Add(employee);
+        }
+
+        
+
+        IEnumerator<Employee> IEnumerable<Employee>.GetEnumerator()
+        {
+            return new OrganizationEnumarator(this);
         }
 
         public IEnumerator GetEnumerator()
