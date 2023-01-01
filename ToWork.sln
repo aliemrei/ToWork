@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yield", "Yield\Yield.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "DesignPatterns\DesignPatterns.csproj", "{2A9DBCE5-2D73-4EFC-B326-38403AD74DA7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collections", "Collections\Collections.csproj", "{A808022E-8BB9-430C-BA14-29326D9E65A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{2A9DBCE5-2D73-4EFC-B326-38403AD74DA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A9DBCE5-2D73-4EFC-B326-38403AD74DA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A9DBCE5-2D73-4EFC-B326-38403AD74DA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A808022E-8BB9-430C-BA14-29326D9E65A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A808022E-8BB9-430C-BA14-29326D9E65A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A808022E-8BB9-430C-BA14-29326D9E65A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A808022E-8BB9-430C-BA14-29326D9E65A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
